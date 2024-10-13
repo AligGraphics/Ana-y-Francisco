@@ -21,6 +21,7 @@
             justify-content: center;
             padding: 0 20px;
             box-sizing: border-box;
+            transition: background 0.5s ease; /* Transición suave para el fondo */
         }
         h1 {
             font-size: 28px; /* Tamaño de fuente en pantallas grandes */
@@ -34,6 +35,16 @@
 
         /* Media query para pantallas pequeñas */
         @media (max-width: 600px) {
+            body {
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 215, 0, 0.3) 100%),
+                            url('BG.png'); /* Reaplica la imagen de fondo */
+                background-size: cover; /* Mantiene la imagen de fondo */
+                background-position: center; /* Centra la imagen en el fondo */
+                background-repeat: no-repeat; /* Evita que la imagen se repita */
+                transform: rotate(90deg); /* Gira el fondo 90 grados */
+                transform-origin: top left; /* Fija el origen de la transformación */
+                height: 100vh; /* Mantiene la altura en móviles */
+            }
             h1 {
                 font-size: 24px; /* Tamaño de fuente reducido */
                 margin-bottom: 20px; /* Margen inferior reducido */
