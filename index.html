@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Evento</title>
+    <style>
+        body {
+            font-family: 'Playfair Display', serif; /* Cambia la fuente a Playfair Display */
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 215, 0, 0.3) 100%);
+            background-image: url('BG.png'); /* Cambia el nombre del archivo a tu imagen de textura */
+            background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+            background-position: center; /* Centra la imagen en el fondo */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            min-height: 100vh; /* Asegura que el body tenga al menos la altura de la ventana */
+            color: #91651A; /* Color del texto */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: #91651A; /* Color del texto */
+        }
+        .menu-item {
+            font-size: 20px;
+            cursor: pointer;
+            padding: 15px;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 300px;
+            border: 2px solid #D5972D; /* Color de los bordes */
+            border-radius: 30px;
+            text-align: center;
+            background-color: white;
+            transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .menu-item:hover {
+            background-color: #D5972D; /* Color de fondo al pasar el mouse */
+            color: white; /* Color del texto al pasar el mouse */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <!-- Enlace a Google Fonts para Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>¡Bienvenidos a nuestra boda!</h1>
+
+    <div class="menu-item" onclick="window.location.href='https://maps.app.goo.gl/qk9JHtjUyEfmUyv16';">
+        Ceremonia religiosa
+    </div>
+
+    <div class="menu-item" onclick="window.location.href='https://maps.app.goo.gl/ry46Rj92EsgN4BnaA';">
+        Recepción
+    </div>
+</body>
+</html>
